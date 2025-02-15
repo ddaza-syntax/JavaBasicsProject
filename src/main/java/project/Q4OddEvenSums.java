@@ -13,12 +13,12 @@ public class Q4OddEvenSums {
         };
         int oddSum = 0;
         int evenSum = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            for (int j = 0; j < numbers[i].length; j++) {
-                if (numbers[i][j] % 2 == 0) {
-                    evenSum += numbers[i][j];
+        for (int[] number : numbers) {
+            for (int i : number) {
+                if (i % 2 == 0) {
+                    evenSum += i;
                 } else {
-                    oddSum += numbers[i][j];
+                    oddSum += i;
                 }
             }
         }
